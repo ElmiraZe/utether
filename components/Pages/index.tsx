@@ -147,7 +147,7 @@ const Page: PageEl = (props, state, refresh, getProps) => {
             </h2>
 
           </div>
-
+          
         </div>
       </Window>
 
