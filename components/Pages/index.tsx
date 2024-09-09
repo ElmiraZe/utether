@@ -15,24 +15,26 @@ const Page: PageEl = (props, state, refresh, getProps) => {
 
 
   return (
-    <div style={{ direction: "rtl", minHeight: "11vh", }}>
+    <div style={{ direction: "rtl", minHeight: "11vh"}}>
       <br-x />
-      <Window title={"قیمت لحظه ای تتر (Tether)"} style={{ minHeight: 380, margin: 10, width: "calc(100% - 20px)", backgroundColor: "rgb(230 245 248)" }}>
+      <Window title={"قیمت لحظه ای تتر (Tether)"} style={{ minHeight: 420, margin: 10, width: "calc(100% - 20px)",backgroundColor:"lavender"}}>
 
 
-        <div>
+        <div style={{padding:"20px"}}>
 
-          <div style={{ float: "right", height: 300, width: 250, backgroundColor: "rgba(255,255,255,0.3)", border: "2px slateblue solid", borderRadius: 10, marginRight: "15%", marginTop: "3%", textAlign: "center" }}>
+          <div style={{ float: "right", height: 300, width: 250, backgroundColor: "white", border: "2px slateblue solid", borderRadius: 10, marginRight: "15%", marginTop: "3%", textAlign: "center" }}>
 
-            <h1 style={{ marginTop: 20, color: "rgb(54 149 237)", fontSize: 15, fontWeight: "bolder", textAlign: 'center' }}>
+            <h1 style={{ padding:'20px', color: "rgb(54 149 237)", fontSize: 15, fontWeight: "bolder", textAlign: 'center' }}>
 
               نرخ مبادله دلار
 
 
             </h1>
+            
+            <hr style={{margin:"0 auto", width: "70%", opacity: 0.2 }}/>
 
 
-            <h2 style={{ marginTop: 40, color: "rgb(82 14 116)", fontSize: 15, }}>
+            <h2 style={{ marginTop: 25, color: "rgb(82 14 116)", fontSize: 15, }}>
 
               قیمت لحظه ای:
 
@@ -90,16 +92,18 @@ const Page: PageEl = (props, state, refresh, getProps) => {
 
 
 
-          <div style={{ float: "left", height: 300, width: 250, backgroundColor: "rgba(255,255,255,0.3)", border: "2px slateblue solid", borderRadius: 10, marginLeft: "15%", marginTop: "3%", textAlign: "center" }}>
+          <div style={{ float: "left", height: 300, width: 250, backgroundColor: "white", border: "2px slateblue solid", borderRadius: 10, marginLeft: "15%", marginTop: "3%", textAlign: "center" }}>
 
-            <h1 style={{ marginTop: 20, color: "rgb(54 149 237)", fontSize: 15, fontWeight: "bolder", textAlign: 'center' }}>
+            <h1 style={{ padding:"20px" , color: "rgb(54 149 237)", fontSize: 15, fontWeight: "bolder", textAlign: 'center' }}>
 
               Dollar's Exchange Rate
 
             </h1>
 
+            <hr style={{margin:"0 auto", width: "70%", opacity: 0.2 }}/>
 
-            <h2 style={{ marginTop: 40, color: "rgb(180 29 218)", fontSize: 15 }}>
+
+            <h2 style={{ marginTop: 25, color: "rgb(180 29 218)", fontSize: 15 }}>
 
               price:
 
@@ -142,14 +146,11 @@ const Page: PageEl = (props, state, refresh, getProps) => {
 
             </h2>
 
-
           </div>
 
-
         </div>
-
-
       </Window>
+
     </div >
       
 
